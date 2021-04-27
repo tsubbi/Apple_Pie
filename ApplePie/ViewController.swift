@@ -14,9 +14,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var letterButtons: [UIButton]!
     
+    var listOfWords = ["buccaneer", "swift", "glorious", "incandescent", "bug", "program"]
+    let incorrectMovesAllowed: Int = 7
+    var totalWins: Int = 0
+    var totalLosses: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        newRound()
+    }
+    
+    func newRound() {
+        
     }
 
     @IBAction func letterButtonPressed(_ sender: UIButton) {
